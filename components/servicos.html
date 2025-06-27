@@ -1,0 +1,152 @@
+<!-- 
+
+<style>
+.service-icon-large {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.service-icon-large i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.service-nav-link {
+    transition: all 0.3s ease;
+}
+
+.service-nav-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shadow-custom {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(45deg, var(--bs-warning), rgba(255, 193, 7, 0.2));
+    color: var(--bs-dark);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar */
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+@keyframes animate-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: animate-float 3s ease-in-out infinite;
+}
+
+/* Card hover effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-icon-large {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .service-icon-large i {
+        font-size: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+
+
+</style> -->
+
+<!-- <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    document.querySelectorAll('.service-nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+
+                document.querySelectorAll('.service-nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
+    });
+    
+   
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                document.querySelectorAll('.service-nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+    
+  
+    document.querySelectorAll('section[id]').forEach(section => {
+        observer.observe(section);
+    });
+});
+
+
+
+</script> -->
